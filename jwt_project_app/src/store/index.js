@@ -11,12 +11,16 @@ export default createStore({
     initializeStore(state) {
       if(localStorage.getItem("access")) {
         state.access = localStorage.getItem("access")
+        state.access = localStorage.getItem("refresh")
       } else {
         state.access = ''
       }
     },
     setAccess(state, access) {
       state.access = access
+    },
+    setRefresh(state, refresh) {
+      state.refresh = refresh
     }
   },
   actions: {

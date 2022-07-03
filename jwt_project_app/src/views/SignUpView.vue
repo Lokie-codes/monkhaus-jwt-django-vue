@@ -32,7 +32,7 @@ export default {
                 .post('/api/v1/users/', formData)
                 .then(response => {
                     console.log(response)
-                    this.$router.push('/')
+                    this.$router.push('/login')
                 })
                 .catch(error => {
                     console.log(error)
@@ -41,3 +41,5 @@ export default {
     }
 }
 </script>
+
+
